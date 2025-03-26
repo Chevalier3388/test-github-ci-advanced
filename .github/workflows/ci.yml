@@ -19,7 +19,7 @@ jobs:
 
     - run: export PYTHONPATH=$PYTHONPATH:$(pwd)/src
 
-    - run: pytest tests
+    - run: python -m pytest tests
 
     - run: mypy src/
 
