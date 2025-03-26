@@ -1,3 +1,4 @@
+import pytest
 from ..src.main import sum_two
 
 def test_sum_two():
