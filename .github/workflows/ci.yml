@@ -15,10 +15,6 @@ jobs:
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    - run: echo "PYTHONPATH перед тестами: $PYTHONPATH"
-
-    - run: export PYTHONPATH=$PYTHONPATH:$(pwd)/src
-
     - run: python -m pytest tests
 
     - run: mypy src/
